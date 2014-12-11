@@ -27,7 +27,6 @@ import android.content.pm.PackageManager;
 import android.content.res.Configuration;
 import android.content.res.Resources;
 import android.os.Bundle;
-import android.os.UserHandle;
 import android.preference.ListPreference;
 import android.preference.Preference;
 import android.preference.PreferenceScreen;
@@ -44,7 +43,6 @@ import android.view.View;
 import android.widget.EditText;
 
 import com.android.internal.logging.MetricsLogger;
-
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.Utils;
@@ -199,6 +197,7 @@ public class StatusBarSettings extends SettingsPreferenceFragment
         mStatusBarTemperatureStyle.setOnPreferenceChangeListener(this);
 
         enableStatusBarTemperatureDependents();
+
         mColorPicker = (ColorPickerPreference) findPreference(PREF_COLOR_PICKER);
         mColorPicker.setOnPreferenceChangeListener(this);
         int intColor = Settings.System.getInt(getActivity().getContentResolver(),
@@ -331,7 +330,6 @@ public class StatusBarSettings extends SettingsPreferenceFragment
             mStatusBarBatteryShowPercent.setSummary(
                     mStatusBarBatteryShowPercent.getEntries()[index]);
             return true;
-<<<<<<< HEAD
         } else if (preference == mStatusBarTemperature) {
             int temperatureShow = Integer.valueOf((String) newValue);
             int index = mStatusBarTemperature.findIndexOfValue((String) newValue);
@@ -350,7 +348,6 @@ public class StatusBarSettings extends SettingsPreferenceFragment
                     UserHandle.USER_CURRENT);
             mStatusBarTemperatureStyle.setSummary(
                     mStatusBarTemperatureStyle.getEntries()[index]);
-=======
         } else if (preference == mColorPicker) {
             String hex = ColorPickerPreference.convertToARGB(Integer.valueOf(String
                     .valueOf(newValue)));
@@ -358,7 +355,6 @@ public class StatusBarSettings extends SettingsPreferenceFragment
             int intHex = ColorPickerPreference.convertToColorInt(hex);
             Settings.System.putInt(getActivity().getContentResolver(),
                     Settings.System.STATUSBAR_CLOCK_COLOR, intHex);
->>>>>>> 851c24c... Settings: add back status bar color option (2/2)
             return true;
         }
         return false;
