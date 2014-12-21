@@ -351,17 +351,60 @@
         <item>@string/heads_up_time_out_10sec</item>
     </string-array>
 
+
     <string-array name="heads_up_time_out_values" translatable="false">
         <item>0</item>
-        <item>2000</item>
-        <item>3000</item>
-        <item>4000</item>
-        <item>5000</item>
-        <item>6000</item>
-        <item>7000</item>
-        <item>8000</item>
-        <item>9000</item>
-        <item>10000</item>
+
+    <!-- Statusbar clock font style -->
+    <string-array name="clock_font_style_entries">
+        <item>@string/clock_font_bold</item>
+        <item>@string/clock_font_condensed</item>
+        <item>@string/clock_font_light</item>
+        <item>@string/clock_font_light_italic</item>
+        <item>@string/clock_font_normal</item>
+    </string-array>
+
+
+    <string-array name="clock_font_style_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+
+   <string-array name="lockscreen_shortcuts_launch_type_entries" translatable="false">
+        <item>@string/lockscreen_shortcuts_single_tap</item>
+        <item>@string/lockscreen_shortcuts_double_tap</item>
+        <item>@string/lockscreen_shortcuts_longpress</item>
+    </string-array>
+
+    <string-array name="lockscreen_shortcuts_launch_type_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <!-- Gesture Anywhere -->
+    <string-array name="gesture_anywhere_position_entries" translatable="false">
+        <item>@string/gesture_anywhere_position_left</item>
+        <item>@string/gesture_anywhere_position_right</item>
+    </string-array>
+
+    <string-array name="gesture_anywhere_position_values" translatable="false">
+        <item>3</item>
+        <item>5</item>
+    </string-array>
+
+    <!-- Gesture Anywhere -->
+    <string-array name="gesture_anywhere_position_entries" translatable="false">
+        <item>@string/gesture_anywhere_position_left</item>
+        <item>@string/gesture_anywhere_position_right</item>
+    </string-array>
+
+    <string-array name="gesture_anywhere_position_values" translatable="false">
+        <item>3</item>
+        <item>5</item>
     </string-array>
 
 </resources>
