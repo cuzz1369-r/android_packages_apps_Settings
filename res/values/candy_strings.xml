@@ -16,4 +16,8 @@
     <string name="candy_version_title">Candy version</string>
     <string name="candy_version_default">Unknown</string>
 
+    <!-- Changelog -->
+    <string name="changelog_candy_title">Changelog</string>
+    <string name="changelog_candy_error">Unable to load changelog</string>
+
 </resources>
