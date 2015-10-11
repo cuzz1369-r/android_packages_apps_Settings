@@ -230,6 +230,11 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
 
         mWakeWhenPluggedOrUnplugged =
                 (SwitchPreference) findPreference(KEY_WAKE_WHEN_PLUGGED_OR_UNPLUGGED);
+        final UiModeManager uiManager = (UiModeManager) getSystemService(
+                Context.UI_MODE_SERVICE);
+        final int currentNightMode = uiManager.getNightMode();
+        mNightModePreference.setValue(String.valueOf(currentNightMode));
+        mNightModePreference.setOnPreferenceChangeListener(this);
     }
 
     private static boolean allowAllRotations(Context context) {
