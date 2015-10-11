@@ -23,6 +23,11 @@
                 android:title="@string/multiwindow_settings_title" 
                 />
 
+    <PreferenceScreen
+        android:key="navigation_bar_general_category"
+        android:fragment="com.android.settings.candy.NavigationBarSettings"
+        android:title="@string/navigation_bar_screen_title" />
+
         <PreferenceScreen
                 android:key="systemuituner"
                 android:title="@string/systemuituner" >

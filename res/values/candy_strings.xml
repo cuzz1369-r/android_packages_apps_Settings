@@ -30,7 +30,7 @@
     <string name="category_general_title">General Options</string>
     <string name="candy_settings_title">Candy interface</string>
     <string name="header_category_personalization">Personalization</string>
-
+    <string name="display_category_navbar_options_title">Navigation bar</string>
     <!-- Candy interface -->
     <string name="Candy_title">Candy interface</string>
     <string name="interface_title">Interface</string>
@@ -45,5 +45,12 @@
     <string name="enable_multi_window">Multi-window mode</string>
     <string name="enable_multi_window_summary">Multiple activities on screen at the same time.</string>
     <string name="warning_multi_window_text">WARNING: This is a highly experimental feature that allows multiple activities on-screen at the same time through the Recent apps UI. Some apps may crash or not function correctly when used with this feature.</string>
+ 
+    <!-- SuperSU header name - the app hides itself from launcher based on this resource name being present in com.android.settings -->
+    <string name="supersu_title">SuperSU</string>
 
+    <!-- kill app long press back -->
+    <string name="kill_app_longpress_back">Kill app back button</string>
+    <string name="kill_app_longpress_back_summary">Kill the foreground app by long-pressing the back key</string>
+ </resources>
 </resources>
