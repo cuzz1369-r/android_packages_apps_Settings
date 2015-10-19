@@ -34,6 +34,7 @@
     <!-- Candy interface -->
     <string name="Candy_title">Candy interface</string>
     <string name="interface_title">Interface</string>
+    <string name="systemuituner">SystemUI Tuner</string>
 
     <!-- Changelog -->
     <string name="changelog_candy_title">Changelog</string>
