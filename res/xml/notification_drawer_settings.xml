@@ -30,7 +30,16 @@
         android:summary="@string/qs_brightness_slider_summary"
         android:defaultValue="true" />
 
+<<<<<<< HEAD
     <com.android.settings.preference.SecureSettingSwitchPreference
+=======
+    <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
+        android:key="force_expanded_notifications"
+        android:title="@string/force_expanded_notifications_title"
+        android:summary="@string/force_expanded_notifications_summary" />
+
+    <com.android.settings.cyanogenmod.SecureSettingSwitchPreference
+>>>>>>> 418907d... Force Expanded Notifications [2/2]
         android:key="qs_use_four_columns"
         android:title="@string/qs_four_columns_title"
         android:defaultValue="false" />
