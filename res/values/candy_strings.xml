@@ -14,7 +14,30 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  
+
+	<!-- About phone screen/versioning -->
+    <string name="candysix_version_title">CandySiX version</string>
+    <string name="candysix_version_default">Unknown</string>
+
+ 	<!-- CandySiX General Settings Strings -->
+    <string name="attention">Attention</string>
+    <string name="ok">OK</string>
+    <string name="reset">Reset</string>
+    <string name="help">Help</string>
+    <string name="add">Add</string>
+    <string name="enabled">Enabled</string>
+    <string name="default_string">Default</string>
+    <string name="choose_app">Choose application</string>
+    <string name="reset_message">Reset all entries to default?</string>
+    <string name="display_category_candy5_options_title">Candy5 Interface</string>
+    <string name="category_general_title">General Options</string>
+    <string name="candy_settings_title">Candy interface</string>
+	<string name="header_category_personalization">Personalization</string>
+
+    <!-- Candy interface -->
+    <string name="Candy_title">Candy interface</string>
+    <string name="interface_title">Interface</string>
+
     <!-- Changelog -->
     <string name="changelog_candy_title">Changelog</string>
     <string name="changelog_candy_error">Unable to load changelog</string>

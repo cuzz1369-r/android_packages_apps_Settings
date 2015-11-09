@@ -112,6 +112,13 @@
                 android:targetClass="com.cyanogenmod.settings.device.TouchscreenGestureSettings" />
         </dashboard-tile>
 
+        <!-- Candy interface -->
+        <dashboard-tile
+                android:id="@+id/main_settings"
+                android:title="@string/candy_settings_title"
+                android:fragment="com.android.settings.candy.MainSettings"
+                android:icon="@drawable/ic_candy_interface"/>
+
         <!-- Themes -->
         <!-- NOTE: Intent.parseIntent looks for "categories" tag and not "category" -->
         <dashboard-tile

@@ -83,7 +83,7 @@
                 android:title="@string/firmware_version"
                 android:summary="@string/device_info_default"/>
 
-       <!-- Candy5 version -->
+       <!-- Candy version -->
         <Preference android:key="candy_version"
                 style="?android:preferenceInformationStyle"
                 android:title="@string/candysix_version_title"
