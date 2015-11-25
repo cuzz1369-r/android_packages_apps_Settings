@@ -28,16 +28,16 @@
                 android:key="battery_bar"
                 android:fragment="com.android.settings.candy.BatteryBar"
                 android:title="@string/battery_bar" 
-		/>
+		        />
 
-	<!-- Buttons -->
+	    <!-- Buttons -->
         <PreferenceScreen
                 android:id="@+id/button_settings"
                 android:title="@string/button_pref_title"
                 android:fragment="com.android.settings.ButtonSettings"
                 />
 
-	<!-- Display -->
+	    <!-- Display -->
         <PreferenceScreen
                 android:id="@+id/display_settings"
                 android:title="@string/display_settings"
@@ -63,14 +63,22 @@
                 android:title="@string/multiwindow_settings_title" 
                 />
   
-	<!-- Notifications -->
+	    <!-- Notifications -->
         <PreferenceScreen
                 android:id="@+id/notification_settings"
                 android:title="@string/notification_settings"
                 android:fragment="com.android.settings.notification.NotificationSettings"
                 />
+                
+        <!-- OmniSwitch -->
+        <PreferenceScreen
+            android:key="omniswitch"
+            android:id="@+id/omniswitch"
+            android:title="@string/omniswitch_settings_title"
+            android:fragment="com.android.settings.candy.OmniSwitch" 
+            />
 
-	<!-- Statusbar -->
+	    <!-- Statusbar -->
         <PreferenceScreen
                 android:id="@+id/status_bar_settings"
                 android:title="@string/status_bar_title"
