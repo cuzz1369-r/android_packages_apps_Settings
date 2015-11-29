@@ -50,7 +50,6 @@ import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settings.search.Indexable;
 
 import cyanogenmod.providers.CMSettings;
-import org.cyanogenmod.hardware.KeyDisabler;
 import cyanogenmod.hardware.CMHardwareManager;
 
 import java.util.List;
