@@ -15,14 +15,7 @@
              xmlns:android="http://schemas.android.com/apk/res/android"
              xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
              android:title="@string/candy_settings_title" >
-
-        <!-- App sidebar -->
-        <PreferenceScreen
-                android:key="app_sidebar"
-                android:fragment="com.android.settings.candy.AppSidebar"
-                android:title="@string/app_sidebar_title"
-                />
-
+   
         <!-- Battery bar -->
         <PreferenceScreen
                 android:key="battery_bar"
