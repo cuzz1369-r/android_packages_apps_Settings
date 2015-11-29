@@ -277,36 +277,6 @@
 
     <!-- Do not disturb lights -->
     <string name="allow_lights_title">Allow notification lights during do not disturb</string>
-
-    <!-- App sidebar -->
-    <string name="app_sidebar_title">App Sidebar</string>
-    <string name="app_sidebar_enable_title">Enable App Sidebar</string>
-    <string name="app_sidebar_enable_summaryOn">App Sidebar is enabled</string>
-    <string name="app_sidebar_enable_summaryOff">App Sidebar is disabled</string>
-    <string name="app_sidebar_setup_items_title">Setup sidebar content</string>
-    <string name="app_sidebar_setup_items_summary">Add, remove, and position items in the sidebar</string>
-    <string name="app_sidebar_transparency_title">Sidebar transparency</string>
-    <string name="app_sidebar_transparency_summary">Adjust the sidebar transparency level</string>
-    <string name="app_sidebar_position_title">Sidebar position</string>
-    <string name="app_sidebar_position_summary">Position the sidebar on the left or right side of the screen</string>
-    <string name="app_sidebar_position_left">Left</string>
-    <string name="app_sidebar_position_right">Right</string>
-    <string name="app_sidebar_hide_labels_title">Hide icon labels</string>
-    <string name="app_sidebar_hide_labels_summary">Hide sidebar icon labels</string>
-    <string name="tab_category">Visible Tab</string>
-    <string name="use_tab_title">Display tab</string>
-    <string name="use_tab_summary">Display a visible tab on the side which will display the sidebar when touched.</string>
-    <string name="tab_position_title">Tab location</string>
-    <string name="tab_position_summary">Display the tab on the top, middle, or bottom on the side of the screen.</string>
-    <string name="tab_size_title">Tab size</string>
-    <string name="tab_size_summary">Change the size of the visible tab.</string>
-    <string name="trigger_category">Trigger region</string>
-    <string name="trigger_width_title">Trigger width</string>
-    <string name="trigger_width_summary">Adjust the width of the trigger area</string>
-    <string name="trigger_top_title">Trigger position</string>
-    <string name="trigger_top_summary">Adjust the vertical postion of the trigger area</string>
-    <string name="trigger_bottom_title">Trigger height</string>
-    <string name="trigger_bottom_summary">Adjust the height of the trigger area</string>
     
     <!-- OmniSwitch -->
     <string name="omniswitch_category">OmniSwitch</string>
@@ -343,5 +313,23 @@
     <!-- Ability to disable hardware keys via nav bar settings -->
     <string name="hw_keys_title">Hardware keys</string>
     <string name="hw_keys_summary">Enable hardware keys</string>
+
+    <!--Status bar date -->
+    <string name="status_bar_clock_category">Clock</string>
+    <string name="status_bar_date_title">Date</string>
+    <string name="status_bar_date_none">Hidden (default)</string>
+    <string name="status_bar_date_small">Small</string>
+    <string name="status_bar_date_normal">Normal</string>
+    <string name="status_bar_date_format_title">Date format</string>
+    <string name="status_bar_date_style">Date style</string>
+    <string name="status_bar_date_style_normal">Normal</string>
+    <string name="status_bar_date_style_lowercase">Lowercase</string>
+    <string name="status_bar_date_style_uppercase">Uppercase</string>
+    <string name="status_bar_date_format_custom">Custom java format</string>
+    <string name="status_bar_date_string_edittext_title">Must be in DateFormat eg. MM/dd/yy</string>
+    <string name="status_bar_date_string_edittext_summary">Enter string</string>
+    <string name="clock_color_title">Color</string>
+    <string name="status_bar_clock_style_reset">Reset color</string>
+    <string name="status_bar_clock_style_reset_message">Reset clock color?</string>
 
 </resources>
