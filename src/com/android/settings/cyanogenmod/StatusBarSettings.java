@@ -70,6 +70,8 @@ public class StatusBarSettings extends SettingsPreferenceFragment
     private static final String STATUS_BAR_DATE_STYLE = "status_bar_date_style";
     private static final String STATUS_BAR_DATE_FORMAT = "status_bar_date_format";
     private static final String PREF_COLOR_PICKER = "clock_color";
+    private static final String PREF_FONT_STYLE = "font_style";
+    private static final String PREF_STATUS_BAR_CLOCK_FONT_SIZE  = "status_bar_clock_font_size";
     private static final String STATUS_BAR_BATTERY_STYLE = "status_bar_battery_style";
     private static final String STATUS_BAR_SHOW_BATTERY_PERCENT = "status_bar_show_battery_percent";
     private static final String STATUS_BAR_TEMPERATURE_STYLE = "status_bar_temperature_style";
@@ -80,7 +82,7 @@ public class StatusBarSettings extends SettingsPreferenceFragment
 
     public static final int CLOCK_DATE_STYLE_LOWERCASE = 1;
     public static final int CLOCK_DATE_STYLE_UPPERCASE = 2;
-    private static final int CUSTOM_CLOCK_DATE_FORMAT_INDEX = 18;
+    private static final int CUSTOM_CLOCK_DATE_FORMAT_INDEX = 23;
 
     private static final int MENU_RESET = Menu.FIRST;
 
@@ -92,6 +94,9 @@ public class StatusBarSettings extends SettingsPreferenceFragment
     private ListPreference mStatusBarDateStyle;
     private ListPreference mStatusBarDateFormat;
     private ColorPickerPreference mColorPicker;
+    private ListPreference mFontStyle;
+    private ListPreference mStatusBarClockFontSize;
+
     private ListPreference mStatusBarBattery;
     private ListPreference mStatusBarBatteryShowPercent;
     private ListPreference mStatusBarTemperature;
@@ -213,6 +218,20 @@ public class StatusBarSettings extends SettingsPreferenceFragment
         }
         mColorPicker.setNewPreviewColor(intColor);
 
+        mFontStyle = (ListPreference) findPreference(PREF_FONT_STYLE);
+        mFontStyle.setOnPreferenceChangeListener(this);
+        mFontStyle.setValue(Integer.toString(Settings.System.getInt(getActivity()
+                .getContentResolver(), Settings.System.STATUSBAR_CLOCK_FONT_STYLE,
+                0)));
+        mFontStyle.setSummary(mFontStyle.getEntry());
+
+        mStatusBarClockFontSize = (ListPreference) findPreference(PREF_STATUS_BAR_CLOCK_FONT_SIZE);
+        mStatusBarClockFontSize.setOnPreferenceChangeListener(this);
+        mStatusBarClockFontSize.setValue(Integer.toString(Settings.System.getInt(getActivity()
+                .getContentResolver(), Settings.System.STATUSBAR_CLOCK_FONT_SIZE, 
+                14)));
+        mStatusBarClockFontSize.setSummary(mStatusBarClockFontSize.getEntry());
+
         setHasOptionsMenu(true);
         mCheckPreferences = true;
         return prefSet;
@@ -242,6 +261,7 @@ public class StatusBarSettings extends SettingsPreferenceFragment
             return false;
         }
         AlertDialog dialog;
+
         ContentResolver resolver = getActivity().getContentResolver();
         if (preference == mStatusBarClock) {
             int clockStyle = Integer.parseInt((String) newValue);
@@ -357,6 +377,20 @@ public class StatusBarSettings extends SettingsPreferenceFragment
             Settings.System.putInt(getActivity().getContentResolver(),
                     Settings.System.STATUSBAR_CLOCK_COLOR, intHex);
             return true;
+        } else if (preference == mFontStyle) {
+            int val = Integer.parseInt((String) newValue);
+            int index = mFontStyle.findIndexOfValue((String) newValue);
+            Settings.System.putInt(getActivity().getContentResolver(),
+                    Settings.System.STATUSBAR_CLOCK_FONT_STYLE, val);
+            mFontStyle.setSummary(mFontStyle.getEntries()[index]);
+            return true;
+        } else if (preference == mStatusBarClockFontSize) {
+            int val = Integer.parseInt((String) newValue);
+            int index = mStatusBarClockFontSize.findIndexOfValue((String) newValue);
+            Settings.System.putInt(getActivity().getContentResolver(),
+                    Settings.System.STATUSBAR_CLOCK_FONT_SIZE, val);
+            mStatusBarClockFontSize.setSummary(mStatusBarClockFontSize.getEntries()[index]);
+            return true;
         }
         return false;
     }
@@ -369,6 +403,24 @@ public class StatusBarSettings extends SettingsPreferenceFragment
             mStatusBarTemperatureStyle.setEnabled(false);
         } else {
             mStatusBarTemperatureStyle.setEnabled(true);
+        }
+    }
+
+    @Override
+    public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
+        menu.add(0, MENU_RESET, 0, R.string.reset)
+                .setIcon(R.drawable.ic_settings_reset)
+                .setShowAsAction(MenuItem.SHOW_AS_ACTION_ALWAYS);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case MENU_RESET:
+                showDialogInner(DLG_RESET);
+                return true;
+             default:
+                return super.onContextItemSelected(item);
         }
     }
 
