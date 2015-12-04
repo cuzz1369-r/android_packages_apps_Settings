@@ -38,8 +38,8 @@
     <string name="Candy_title">Candy interface</string>
     <string name="interface_title">Interface</string>
     <string name="systemuituner">SystemUI Tuner</string>
-    <string name="navigation_bar_screen_title">Navigation bar</string>
     <string name="power_menu_title">Power menu</string>
+    <string name="notification_drawer_title">Notification drawer/QS</string>
 
     <!-- Changelog -->
     <string name="changelog_candy_title">Changelog</string>
