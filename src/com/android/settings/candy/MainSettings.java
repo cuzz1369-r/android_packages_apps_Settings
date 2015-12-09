@@ -40,6 +40,7 @@ public class MainSettings extends SettingsPreferenceFragment {
         addPreferencesFromResource(R.xml.candy_main_settings);
     }
 
+    @Override
     protected int getMetricsCategory()
     {
 	return MetricsLogger.APPLICATION;
