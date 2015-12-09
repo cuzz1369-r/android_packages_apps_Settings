@@ -10,6 +10,7 @@ import android.preference.SwitchPreference;
 import android.provider.Settings;
 
 import com.android.settings.R;
+import com.android.settings.candy.SystemSettingSwitchPreference;
 import com.android.settings.SettingsPreferenceFragment;
 
 public class NavigationBarSettings extends SettingsPreferenceFragment implements
@@ -45,6 +46,6 @@ public class NavigationBarSettings extends SettingsPreferenceFragment implements
 
     @Override
     protected int getMetricsCategory() {
-        return MetricsLogger.DISPLAY;
+        return MetricsLogger.APPLICATION;
     }
 }
