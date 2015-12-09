@@ -59,7 +59,7 @@ public class PowerMenuActions extends PreferenceFragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        addPreferencesFromResource(R.xml.chroma_settings_power);
+        addPreferencesFromResource(R.xml.candy_settings_power);
         mContext = getActivity().getApplicationContext();
 
         mAvailableActions = getActivity().getResources().getStringArray(
