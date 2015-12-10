@@ -113,4 +113,7 @@
     <string name="volbtn_music_controls_title">Playback control</string>
     <string name="volbtn_music_controls_summary">When the screen is off, long pressing the volume keys will seek music tracks</string>
     
+     <!-- Font size sample text -->
+    <string name="font_size_sample">Font Size</string>
+    
 </resources>
