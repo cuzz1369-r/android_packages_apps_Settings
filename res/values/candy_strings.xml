@@ -32,6 +32,7 @@
     <string name="header_category_personalization">Personalization</string>
     <string name="display_category_navbar_options_title">Navigation bar</string>
     <string name="statusbar_settings_title">Status Bar</string>
+    <string name="button_settings_title">Buttons</string>
 
     <!-- Candy interface -->
     <string name="Candy_title">Candy interface</string>
