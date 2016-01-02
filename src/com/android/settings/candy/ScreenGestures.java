@@ -14,7 +14,7 @@
 * limitations under the License.
 */
 
-package com.android.settings.mallow;
+package com.android.settings.candy;
 
 import com.android.internal.logging.MetricsLogger;
 
