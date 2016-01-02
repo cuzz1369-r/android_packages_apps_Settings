@@ -53,6 +53,7 @@
     <string name="candy_settings_title">Candy interface</string>
     <string name="header_category_personalization">Personalization</string>
     <string name="statusbar_settings_title">Status bar</string>
+    <string name="gestures_title">Gestures</string>
 
     <!-- Candy interface -->
     <string name="Candy_title">Candy interface</string>

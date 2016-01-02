@@ -31,6 +31,13 @@
          android:fragment="com.android.settings.DisplaySettings"
          />
 
+    <!-- Gestures -->
+    <PreferenceScreen
+         android:key="screen_gestures"
+         android:title="@string/gestures_title"
+         android:fragment="com.android.settings.candy.ScreenGestures"
+         />
+
     <!-- Notification drawer -->
     <PreferenceScreen
          android:id="@+id/notification_drawer_settings"
