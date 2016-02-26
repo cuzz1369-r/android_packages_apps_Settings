@@ -988,11 +988,13 @@
     <string name="doze_notification_color_invert_summary_off">Ambient display notifications will not be inverted. Use for dark themes.</string>
     <string name="doze_notification_color_invert_summary_on">Ambient display notifications will show as inverted. Use for light/stock theme.</string>
 
-    <!-- Hide Lockscreen clock & date -->
+    <!-- Hide Lockscreen items -->
     <string name="hide_lockscreen_items_title">Lockscreen items</string>
     <string name="hide_lockscreen_clock_title">Show lockscreen clock</string>
     <string name="hide_lockscreen_clock_summary">Enable/Disable clock on lockscreen</string>
     <string name="hide_lockscreen_date_title">Show lockscreen date</string>
     <string name="hide_lockscreen_date_summary">Enable/Disable date on lockscreen</string>
+    <string name="hide_lockscreen_alarm_title">Show lockscreen alarm</string>
+    <string name="hide_lockscreen_alarm_summary">Enable/Disable alarm text on lockscreen</string>
 
 </resources>
